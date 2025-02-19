@@ -53,7 +53,6 @@ body {
 }
 
 .button {
-  padding: 25px 45px;
   border: none;
   text-transform: uppercase;
   background-color: #507fe1;
@@ -61,11 +60,46 @@ body {
   font-family: "Proxima Nova Semibold", sans-serif;
 }
 
+.bg-secondary {
+  background-color: #f1f1f1;
+}
+
+.input {
+  height: 80px;
+  width: 100%;
+  padding-left: 30px;
+  border: 1px solid #dddddd;
+}
+
 @media (max-width: 600px) {
   .button-o {
     font-size: 10px;
   }
 }
+input[type=checkbox] {
+  display: none;
+}
+input[type=checkbox]:checked + label:before {
+  background-color: #507fe1;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  margin: 0px 40px 0px 0px;
+}
+.checkbox-label:hover {
+  cursor: pointer;
+  opacity: 0.75;
+}
+.checkbox-label:before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border: 1px solid #dddddd;
+  margin: 0px 20px 0px 0px;
+}
+
 .navbar {
   position: fixed;
   left: 0;
@@ -201,5 +235,82 @@ body {
   .hero {
     background-size: cover;
     background-position: top left 30%;
+  }
+}
+.offer {
+  padding: 129px 0;
+}
+.offer-block {
+  background: #fff url("../img/offer/offer-bg.png") no-repeat center right;
+  background-size: contain;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  padding: 80px;
+  margin-top: -200px;
+}
+.offer__title {
+  font-size: 25px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-family: "Proxima Nova Semibold", sans-serif;
+}
+.offer__subtitle {
+  display: block;
+  font-size: 21px;
+  margin-bottom: 48px;
+}
+
+.form__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  max-width: 900px;
+  align-items: flex-start;
+}
+.form__label {
+  display: block;
+  font-size: 17px;
+  margin-bottom: 15px;
+}
+.form__input {
+  width: 100%;
+  border-right-width: 0px;
+}
+.form__input:last-child {
+  border-right-width: 1px;
+}
+.form__group {
+  flex-basis: 33.33%;
+}
+.form__button {
+  width: 100%;
+  height: 80px;
+}
+.form__checkbox {
+  margin: 25px 0px;
+}
+
+@media (max-width: 1199px) {
+  .offer-block {
+    background-position: center right -240px;
+  }
+}
+@media (max-width: 768px) {
+  .offer-block {
+    background: none;
+    background-color: #fff;
+    padding: 40px;
+  }
+  .offer__title {
+    font-size: 18px;
+  }
+  .offer__subtitle {
+    font-size: 16px;
+  }
+  .form__row {
+    flex-direction: column;
+  }
+  .form__group {
+    flex-basis: 100%;
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

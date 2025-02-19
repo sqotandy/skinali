@@ -10,12 +10,37 @@ body
     color: $primary
     background-color: #fff
 .button
-    padding: 25px 45px
+    // padding: 25px 45px
     border: none
     text-transform: uppercase
     background-color: $primary
     color: #ffffff 
     +bold
+.bg-secondary
+    background-color: $bg-secondary
+.input
+    height: 80px
+    width: 100%
+    padding-left: 30px
+    border: 1px solid #dddddd
 @media (max-width: 600px)
     .button-o
         font-size: 10px
+input[type="checkbox"]
+    display: none
+    &:checked + label:before
+            background-color: $primary
+.checkbox 
+    &-label
+        display: flex
+        align-items: center
+        margin: 0px 40px 0px 0px
+        &:hover
+            cursor: pointer
+            opacity: 0.75
+        &:before
+            content: ''
+            width: 30px
+            height: 30px
+            border: 1px solid #dddddd
+            margin: 0px 20px 0px 0px
