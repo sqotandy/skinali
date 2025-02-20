@@ -73,6 +73,31 @@ body {
   color: #ffffff;
   font-family: "Proxima Nova Semibold", sans-serif;
 }
+.button-fitting {
+  color: #507fe1;
+  border: none;
+  font-size: 11px;
+  text-transform: uppercase;
+  padding: 10px;
+  height: 30px;
+  background-color: #ffffff;
+}
+.button-add {
+  background-color: #507fe1;
+  border: none;
+  font-size: 11px;
+  height: 30px;
+  text-transform: uppercase;
+  padding: 10px;
+  color: #ffffff;
+}
+.button-like {
+  background-color: #507fe1;
+  color: #ffffff;
+  height: 30px;
+  border: none;
+  width: 30px;
+}
 
 .bg-secondary {
   background-color: #f1f1f1;
@@ -309,30 +334,6 @@ input[type=checkbox]:checked + label:before {
   margin: 25px 0px;
 }
 
-input[type=checkbox] {
-  display: none;
-}
-input[type=checkbox]:checked + label:before {
-  background-color: #507fe1;
-}
-
-.checkbox-label {
-  display: flex;
-  align-items: center;
-  margin: 0px 40px 0px 0px;
-}
-.checkbox-label:hover {
-  cursor: pointer;
-  opacity: 0.75;
-}
-.checkbox-label:before {
-  content: "";
-  width: 30px;
-  height: 30px;
-  border: 1px solid #dddddd;
-  margin: 0px 20px 0px 0px;
-}
-
 @media (max-width: 1199px) {
   .offer-block {
     background-position: center right -240px;
@@ -382,4 +383,33 @@ input[type=checkbox]:checked + label:before {
     flex-basis: 100%;
     margin: 0px 0px 60px 0px;
   }
+}
+.catalog-block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.catalog__card {
+  margin: 0px 0px 30px 0px;
+}
+.catalog-card {
+  max-width: 576px;
+  position: relative;
+  box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.2);
+}
+.catalog-card__buttons {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.catalog-card__tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.catalog-card__image {
+  display: block;
+  width: 570px;
+  height: 133px;
 }/*# sourceMappingURL=style.css.map */
