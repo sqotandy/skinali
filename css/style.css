@@ -53,6 +53,7 @@ body {
 }
 
 .button {
+  padding: 25px 45px;
   border: none;
   text-transform: uppercase;
   background-color: #507fe1;
@@ -292,6 +293,9 @@ input[type=checkbox]:checked + label:before {
 @media (max-width: 1199px) {
   .offer-block {
     background-position: center right -240px;
+  }
+  .form__button {
+    padding: 0;
   }
 }
 @media (max-width: 768px) {
