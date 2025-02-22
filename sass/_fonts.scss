@@ -24,3 +24,15 @@
 @mixin light {
     font-family: 'Proxima Nova Light', sans-serif;
 }
+@mixin mini {
+    font-family: 'Proxima Nova Light', sans-serif; 
+    font-size: 12px;
+}
+@mixin miniPlus {
+    font-family: 'Proxima Nova Light', sans-serif; 
+    font-size: 10px;
+}
+@mixin miniUltra {
+    font-family: 'Proxima Nova Light', sans-serif; 
+    font-size: 8px;
+}

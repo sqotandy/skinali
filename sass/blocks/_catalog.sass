@@ -6,19 +6,56 @@
         align-items: center
     &__card
         margin: 0px 0px 30px 0px
+    &__link 
+        text-align: center
+        justify-content: center
+    &__link-more 
+        display: inline-block
+        margin: 0px 0px 24px 0px
+    &__description
+        display: block
+        padding: 0px 0px 100px 0px
     &-card 
+        overflow: hidden
+        z-index: 0
         max-width: 576px
         position: relative
         box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.2)
         &__buttons
+            display: flex
             position: absolute
             bottom: 0
             right: 0
         &__tag
+            text-transform: uppercase
             position: absolute
-            top: 0
-            left: 0
+            background-color: rgba($primary,0.6)
+            color: #fff
+            top: 10px
+            left: 10px
+            padding: 10px
         &__image
             display: block
-            width: 570px
-            height: 133px
+            // width: 570px
+            // height: 133px
+@media (max-width: 1199px)
+    .catalog
+        padding: 5px 0px
+        &-card 
+            max-width: 470
+        &-block 
+            justify-content: center
+            max-width: 470
+@media (max-width: 991px)
+    .catalog
+        +mini
+        &-card 
+            max-width: 100%
+        &-block 
+            justify-content: center
+@media (max-width: 768px)
+    .catalog
+        +miniPlus
+@media (max-width: 567px)
+    .catalog
+        +miniUltra
