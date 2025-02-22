@@ -519,4 +519,12 @@ input[type=checkbox]:checked + label:before {
   .blog-list__card {
     margin: 20px 80px;
   }
+}
+@media (max-width: 768px) {
+  .blog-list {
+    justify-content: space-around;
+  }
+  .blog-list__card {
+    margin: 10px 40px;
+  }
 }/*# sourceMappingURL=style.css.map */
