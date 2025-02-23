@@ -79,6 +79,10 @@ img {
   color: #ffffff;
   font-family: "Proxima Nova Semibold", sans-serif;
 }
+.button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
 .button-fitting {
   color: #507fe1;
   border: none;
@@ -494,7 +498,7 @@ input[type=checkbox]:checked + label:before {
   justify-content: space-between;
 }
 .blog-list__image {
-  height: 200px;
+  max-height: 200px;
   overflow: hidden;
 }
 .blog-list__text {
@@ -526,5 +530,93 @@ input[type=checkbox]:checked + label:before {
   }
   .blog-list__card {
     margin: 10px 40px;
+  }
+}
+.price {
+  background-color: #f1f1f1;
+}
+.price-block {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.price-block__card {
+  margin: 0px 0px 10px 0px;
+}
+.price-card {
+  position: relative;
+  background-color: #fff;
+}
+.price-card__text {
+  padding: 20px;
+  font-size: 15px;
+}
+.price-card__title {
+  margin: 0;
+}
+.price-card__cost {
+  font-family: "Proxima Nova Semibold", sans-serif;
+}
+.price-card__pricetag {
+  display: flex;
+  justify-content: space-between;
+}
+.price-card__button {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.05);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  z-index: -1;
+  background-color: #fff;
+}
+.price-card:hover .price-card__button {
+  z-index: 1;
+  bottom: -90px;
+}
+
+@media (max-width: 1199px) {
+  .price-block {
+    justify-content: center;
+  }
+  .price-block__card {
+    margin: 30px;
+  }
+}
+@media (max-width: 991px) {
+  .price-block {
+    justify-content: center;
+  }
+  .price-block__card {
+    margin: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .price-block {
+    justify-content: center;
+  }
+  .price-block__card {
+    margin: 10px;
+  }
+  .price-card__text {
+    font-size: 12px;
+  }
+}
+@media (max-width: 567px) {
+  .price-block {
+    justify-content: center;
+  }
+  .price-block__card {
+    margin: 10px;
+  }
+  .price-card__text {
+    font-size: 8px;
+  }
+  .price-card__pricetag {
+    gap: 5px;
   }
 }/*# sourceMappingURL=style.css.map */
