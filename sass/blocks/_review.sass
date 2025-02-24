@@ -1,0 +1,69 @@
+.reviews
+    background-color: #f5f6f8
+    &-slider
+        display: flex
+        justify-content: space-between
+        gap: 10px
+        flex-wrap: wrap
+        align-content: center
+        &__item
+            display: inline-block
+            text-align: center
+            min-height: fit-content
+            flex-wrap: wrap
+        &__image
+            width: 70px
+            height: 70px
+            display: block
+            border: 2px solid #6a99e9
+            border-radius: 60%
+            margin: 20px auto
+        &__text
+            position: relative
+            min-height: 150px
+            text-align: center
+            justify-content: center
+            align-content: center
+            font-size: 15px
+            font-style: italic
+            max-width: 370px
+            padding: 20px
+            background-color: #fff
+            border-radius: 10px
+            margin-bottom: 30px
+            &:after
+                position: absolute
+                content: ''
+                height: 10px
+                bottom: -50px
+                transform: translateX(-50%)
+                left: 50%
+                border: 20px solid transparent 
+                border-top: 20px solid #fff 
+@media (max-width: 1199px)
+    .reviews
+        &__title
+        &-slider 
+            justify-content: center
+            align-content: center
+            &__item
+                flex-basis: 100%
+                &:last-child
+                    margin-bottom: 40px
+            &__text
+                max-width: 100%
+                margin: 20px 120px
+@media (max-width: 768px)
+    .reviews
+        &-slider
+            &__text
+                margin: 10px 40px
+@media (max-width: 576px)
+    .reviews
+        &-slider
+            &__text
+                margin: 10px 0px
+
+
+
+

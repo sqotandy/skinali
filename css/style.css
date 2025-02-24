@@ -144,15 +144,25 @@ input[type=checkbox]:checked + label:before {
   margin: 0px 20px 0px 0px;
 }
 
+@media (max-width: 1199px) {
+  .section-title {
+    font-size: 28px;
+  }
+  .section__title {
+    font-size: 28px;
+    padding: 60px 0px;
+  }
+}
 @media (max-width: 576px) {
   .button-o {
     font-size: 10px;
   }
-  .section {
-    padding: 60px;
-  }
   .section-title {
     font-size: 24px;
+  }
+  .section__title {
+    font-size: 24px;
+    padding: 40px 0px;
   }
 }
 .navbar {
@@ -297,11 +307,17 @@ input[type=checkbox]:checked + label:before {
   padding: 129px 0;
 }
 .offer-block {
-  background: #fff url("../img/offer/offer-bg.png") no-repeat center right;
-  background-size: contain;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
   padding: 80px;
   margin-top: -200px;
+}
+.offer-block_calc-bg {
+  background: #fff url("../img/offer/offer-bg-calc.png") no-repeat center right;
+  background-size: contain;
+}
+.offer-block_price-bg {
+  background: #fff url("../img/offer/offer-bg-price.png") no-repeat center right;
+  background-size: contain;
 }
 .offer__title {
   font-size: 25px;
@@ -313,6 +329,7 @@ input[type=checkbox]:checked + label:before {
   display: block;
   font-size: 21px;
   margin-bottom: 48px;
+  max-width: 800px;
 }
 
 .form__row {
@@ -321,6 +338,14 @@ input[type=checkbox]:checked + label:before {
   justify-content: left;
   max-width: 900px;
   align-items: flex-start;
+}
+.form__rows {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  max-width: 900px;
+  align-items: flex-start;
+  margin-top: 40px;
 }
 .form__label {
   display: block;
@@ -333,6 +358,12 @@ input[type=checkbox]:checked + label:before {
 }
 .form__input:last-child {
   border-right-width: 1px;
+}
+.form__policy {
+  display: inline-block;
+  align-content: center;
+  margin-left: 45px;
+  height: 80px;
 }
 .form__group {
   flex-basis: 33.33%;
@@ -351,6 +382,9 @@ input[type=checkbox]:checked + label:before {
   }
   .form__button {
     padding: 0;
+  }
+  .form__policy {
+    margin-left: 20px;
   }
 }
 @media (max-width: 768px) {
@@ -683,5 +717,117 @@ input[type=checkbox]:checked + label:before {
 @media (max-width: 567px) {
   .step {
     flex-basis: 100%;
+  }
+}
+.reviews {
+  background-color: #f5f6f8;
+}
+.reviews-slider {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.reviews-slider__item {
+  display: inline-block;
+  text-align: center;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  flex-wrap: wrap;
+}
+.reviews-slider__image {
+  width: 70px;
+  height: 70px;
+  display: block;
+  border: 2px solid #6a99e9;
+  border-radius: 60%;
+  margin: 20px auto;
+}
+.reviews-slider__text {
+  position: relative;
+  min-height: 150px;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  font-size: 15px;
+  font-style: italic;
+  max-width: 370px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.reviews-slider__text:after {
+  position: absolute;
+  content: "";
+  height: 10px;
+  bottom: -50px;
+  transform: translateX(-50%);
+  left: 50%;
+  border: 20px solid transparent;
+  border-top: 20px solid #fff;
+}
+
+@media (max-width: 1199px) {
+  .reviews-slider {
+    justify-content: center;
+    align-content: center;
+  }
+  .reviews-slider__item {
+    flex-basis: 100%;
+  }
+  .reviews-slider__item:last-child {
+    margin-bottom: 40px;
+  }
+  .reviews-slider__text {
+    max-width: 100%;
+    margin: 20px 120px;
+  }
+}
+@media (max-width: 768px) {
+  .reviews-slider__text {
+    margin: 10px 40px;
+  }
+}
+@media (max-width: 576px) {
+  .reviews-slider__text {
+    margin: 10px 0px;
+  }
+}
+.factory-block {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px;
+}
+.factory-block__text {
+  flex-basis: 50%;
+}
+
+@media (max-width: 991px) {
+  .factory-block {
+    margin: 0px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  .factory-block__image {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 30px;
+  }
+  .factory-block__text {
+    flex-basis: 100%;
+    margin: 20px 40px;
+  }
+}
+@media (max-width: 576px) {
+  .factory-block__image {
+    margin-bottom: 20;
+  }
+  .factory-block__text {
+    margin: 10px 30px;
   }
 }/*# sourceMappingURL=style.css.map */

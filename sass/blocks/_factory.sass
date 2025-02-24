@@ -1,0 +1,30 @@
+.factory
+    &-block 
+        display: flex
+        justify-content: space-between
+        margin: 40px
+        &__text
+            flex-basis: 50%
+@media (max-width: 991px)
+    .factory
+        &-block
+            margin: 0px
+            flex-wrap: wrap
+            justify-content: center
+            align-content: center
+            align-items: center
+            &__image
+                justify-content: center
+                align-content: center
+                align-items: center
+                margin: 30px
+            &__text
+                flex-basis: 100%
+                margin: 20px 40px
+@media (max-width: 576px)
+    .factory
+        &-block 
+            &__image
+                margin-bottom: 20
+            &__text
+                margin: 10px 30px
