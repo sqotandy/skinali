@@ -1,0 +1,23 @@
+.questions
+    &-block 
+        display: flex
+        margin: auto
+        max-width: 800
+        justify-content: space-around
+        text-align: center
+        align-items: center
+    &__title
+        font-size: 30px
+        +bold 
+    &__link
+        font-size: 24px
+        color: $primary
+@media (max-width: 768px)
+    .questions
+        &-block 
+            flex-wrap: wrap
+        &__title
+            flex-basis: 100%
+        &__link
+            flex-basis: 100%
+
