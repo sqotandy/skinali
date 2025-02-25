@@ -1,6 +1,6 @@
 .navbar 
     position: fixed
-    z-index: 2
+    z-index: 5
     left: 0
     top: 0
     width: 100%
@@ -25,16 +25,19 @@
         text-decoration: none
 .menu
     position: fixed
-    z-index: 1
+    z-index: 4
     transform: translateY(-200%)
     transition: 0.6s
     top: 80px
     padding: 16px 0px
     width: 100%
     left: 0
+    opacity: 0
     background-color: $primary
     color: #ffffff
-
+    &_active
+        transform: translateY(0)
+        opacity: 1
     &__nav
         align-items: center
         display: flex
@@ -55,6 +58,11 @@
         border-left: 1px solid rgba(#510bba, 0.2)
         height: 80px
         width: 70px
+        &:hover
+            cursor: pointer
+            opacity: 0.8
+        &:focus
+            outline: none
         &__line 
             display: block
             margin: 2px 0 
@@ -77,13 +85,22 @@
     .navbar
         &__mobile,&__landline
             display: none
-@media (max-width: 600px)
-    .logo
-        display: none
     .menu
         top: 60px
         &-button 
             height: 60px
+        &__nav
+            height: 100%
+            flex-direction: column
+        &__link
+            margin: 5px 0px
+@media (max-width: 600px)
+    .logo
+        display: none
+    .menu
+        top: 40px
+        &-button 
+            height: 50px
         &__nav
             height: 100%
             flex-direction: column

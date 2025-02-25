@@ -21,10 +21,18 @@
         max-width: 576px
         position: relative
         box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.2)
+        &:hover
+            .catalog-card__buttons
+                overflow: hidden
+                transform: translateY(0)
+                opacity: 1
         &__buttons
             display: flex
             position: absolute
             bottom: 0
+            transition: 0.4s
+            opacity: 0
+            transform: translateY(100%)
             right: 0
         &__tag
             text-transform: uppercase
